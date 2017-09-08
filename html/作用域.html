@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>作用域</title>
 </head>
 <body>
-$END$
+<script>
+    var man1 = {
+        name: '哇哈哈'
+    };
+    function Persion (name) {
+        this.name = name;
+    }
+    var man2 = new Persion('可口可乐')
+    console.log(man1)
+    console.log(man2)
+</script>
 </body>
 </html>
