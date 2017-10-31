@@ -14,3 +14,13 @@
  
  
  ## JavaScript
+
+
+## 其他
+#### 1. 发现一个神奇的网站
+> 可以将任何js代码转变成颜文字！
+
+http://utf-8.jp/public/aaencode.html
+
+比如： 打开浏览器控制台，将上述网址的颜文字复制，粘贴在控制台，点击回车！
+> 这段颜文字代表的意思就是*alert("Hello, JavaScript")*
