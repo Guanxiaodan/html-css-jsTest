@@ -5,6 +5,7 @@
  #### table模板 ---- table.html
  #### video标签 ---- video.html
  #### 最简单的图片上传（无后台） ---- new image.html
+ #### 星星 ---- star.html
  
  
  

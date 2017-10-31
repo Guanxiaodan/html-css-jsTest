@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>star</title>
+    <style>
+        .star {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="star" class="star"></h2>
+</body>
+<script>
+    var ss = document.getElementById('star');
+    var rate = 2; // rate是几，就有几颗星
+    var result = '★★★★★☆☆☆☆☆'.slice(5-rate,10-rate)
+    ss.innerText = result;
+</script>
+</html>
