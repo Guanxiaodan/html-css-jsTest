@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<p style="line-height: 18px; font-size: 18px;  font-family: times;">
+  <script>
+    for (var line=1; line<30; line++) {
+      for(var i=1;i<30;i++) {
+//        var s = (Math.floor(Math.random()*2)) ? "╲" : "╱";
+        var s = (Math.floor((Math.random()*2)%2)) ? "╱" : "╲";
+        document.write(s);
+      }
+      document.write("<br>");
+    }
+  </script>
+</p>
+</body>
+</html>
