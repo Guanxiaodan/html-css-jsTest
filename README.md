@@ -30,3 +30,7 @@ http://utf-8.jp/public/aaencode.html
 #### 2.用js写的小demo，有小游戏，炫酷效果，动画。。。
 
 http://js1k.com/
+
+#### 3.可以下载前端书籍
+
+http://www1.qdfuns.com/feres.php?do=picture&listtype=book
