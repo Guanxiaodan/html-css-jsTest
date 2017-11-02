@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框颜色渐变</title>
+    <style>
+      body {
+        background: black;
+      }
+      .border-show {
+        width: 100px;
+        height: 100px;
+        background: white;
+        margin: 300px auto;
+        border: 5px solid;
+        border-image: -webkit-linear-gradient( red , #ffe51a) 30 30;
+        border-image: -moz-linear-gradient( red, #ffda44) 30 30;
+        border-image: linear-gradient( red , #ffe941) 50 50;
+      }
+    </style>
+</head>
+<body>
+  <div class="border-show"></div>
+</div>
+</body>
+</html>
