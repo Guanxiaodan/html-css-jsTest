@@ -80,3 +80,10 @@
 ::-webkit-scrollbar {
     width: 0px;
 }
+/*文字超出显示省略号*/
+.text-overflow {
+    max-width: 510px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

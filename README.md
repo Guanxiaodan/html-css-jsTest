@@ -8,6 +8,7 @@
  #### 最简单的图片上传（无后台） ---- new image.html
  #### 星星 ---- star.html
  #### 随机迷宫 ---- maze.html
+ #### 百度地图 ---- baiduMap.html
  
  
  
