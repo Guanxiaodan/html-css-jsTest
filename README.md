@@ -20,7 +20,16 @@
  
  
  ## JavaScript
-  #### this指向问题 ---- this指向问题.html
+  #### this指向问题 ---- this指向问题.js
+  #### 定时器问题 ---- setInterval.html
+
+
+
+
+
+
+
+
 
 ## 其他
 #### 1. 发现一个神奇的网站

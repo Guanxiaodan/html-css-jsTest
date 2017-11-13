@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>setInterval</title>
+  <style>
+    .change {
+      width: 200px;
+      height: 200px;
+      margin: 100px auto;
+      border: 1px solid forestgreen;
+      transition: all 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">定时器重启</h1>
+  <div class="change" id='change'></div>
+  <div style="text-align: center;">
+    <button id="stop">停止变换</button>
+    <button id="start" style="margin-left: 50px;">开始变换</button>
+  </div>
+  <script>
+//    初始化数据
+    var change = document.getElementById('change');
+    var stop = document.getElementById('stop');
+    var start = document.getElementById('start');
+    var red = 0;
+    var green = 0;
+    var blue = 0;
+    change.style.background = 'rgb(221,42,93)';
+    // 获取0到255之间的随机数
+    var random = function () {
+      return Math.floor(Math.random()*254);
+    };
+
+/**
+ * 原理： setInterval返回的是一个定时器ID，清除定时器的时候会根据这个ID来清除
+ * 所以，用 var timer = setInterval(() => {}, 3000)--------其实这句话的意思就是执行定时器，并将定时器ID返回给timer; 在清除了timer之后，用timer()这样重新启动定时器是没有作用的，因为timer是字符串，并不是函数。
+ * 所以想要重启定时器的套路就是吧定时器放进函数里面，根据定时器ID清除定时器，重启时再次执行定时器外面的函数就行了。
+ */
+
+
+//定时变换颜色
+    var timerId = null;
+    var timerFn = function () {
+      timerId = setInterval(() => {
+        red = random();
+        green = random();
+        blue = random();
+        change.style.background = 'rgb('+red+','+green+','+blue+')';
+      }, 500);
+    };
+    // 初始开始变色
+    timerFn();
+//    停止变色
+    stop.onclick = function () {
+      clearInterval(timerId);
+    };
+//    开始变色
+    start.onclick = function () {
+      timerFn();
+    };
+
+
+  </script>
+</body>
+</html>
