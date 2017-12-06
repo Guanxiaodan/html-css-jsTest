@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <style>
+        .tables {
+            border: 1px solid #e9eaec;
+        }
+
+        .tables .no-left {
+            border-left: none;
+        }
+
+        .tables tr {
+            height: 3rem;
+            transition: all 0.5s;
+        }
+
+        .tables tr:hover {
+            background: rgb(235, 247, 255);
+        }
+
+        .tables th {
+            background: #f8f8f9;
+            border-left: 1px solid #e9eaec;
+            padding-left: 1.2rem;
+            text-align: left;
+        }
+
+        .tables td {
+            padding-right: 1.2rem;
+            padding-left: 1.2rem;
+            border-left: 1px solid #e9eaec;
+            border-top: 1px solid #e9eaec;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <table class="tables" border="0" cellspacing="0" cellpadding="0">
+            <colgroup>
+                <col width="50">
+                <col width="120">
+                <col width="100">
+                <col width="100">
+                <col width="40">
+            </colgroup>
+            <thead>
+            <tr>
+                <th class="no-left">设备名称</th>
+                <th>IP</th>
+                <th>端口号</th>
+                <th>任务</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--设备列表-->
+            <tr>
+                <td >
+                    天宫一号
+                </td>
+                <td >
+                   192.168.31.114
+                </td>
+                <td>
+                    属性规定表格单元格的宽度。
+                    通常，单元格占用的空间就是它显示内容需要的空间
+                </td>
+                <td>
+                    勘探太空在 HTML 4.01 中，不赞成使用 td 元素的 width 属性；在 XHTML 1.0 Strict DTD 中，不支持 td 元素的 width 属性。
+                    请使用 CSS 代替。width 属性规定表格单元格的宽度。
+                    通常，单元格占用的空间就是它显示内容需要的空间。width 属性用于为单元格设置预定义的宽度。　　习近平指出，今天人类生活的关联前所未有，同时人类面临的全球性问题也前所未有。世界各国人民前途命运越来越紧密地联系在一起。世界各国人民应该秉持“天下一家”理念，彼此理解、求同存异，共同为构建人类命运共同体而努力。我提出“一带一路”倡议，就是要践行人类命运共同体理念。4年来，共建“一带一路”已成为有关各国实现共同发展的巨大合作平台。
+                </td>
+                <td >
+                    <button>充 电</button>
+                    <button>勘 探</button>
+                </td>
+            </tr>
+            <!--暂无数据-->
+            <tr>
+                <td colspan="5" style="text-align: center;">
+                    <span>暂无数据</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
