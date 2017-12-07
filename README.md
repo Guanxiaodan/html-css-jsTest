@@ -20,7 +20,9 @@
   #### 相框 ---- 相框.html
   #### 边框凹陷 ---- 边框凹陷.html
   #### 各种类型分割线 ---- 分割线.html
- 
+  #### 各种input框 ---- input.html
+  > 来自于https://codepen.io/Mestika/pen/EKRoeB?q=input&limit=all&type=type-pens
+  #### 自己比较喜欢的input框 ---- input1.html
  
  ## JavaScript
   #### this指向问题 ---- this指向问题.js
