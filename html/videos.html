@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title></title>
+  <script type="text/javascript">
+
+var p = navigator.mediaDevices.getUserMedia({ audio: true, video: true });
+
+p.then(function(mediaStream) {
+  var video = document.querySelector('video');
+  video.src = window.URL.createObjectURL(mediaStream);
+  video.onloadedmetadata = function(e) {
+    console.log(e)
+    // Do something with the video here.
+  };
+});
+
+p.catch(function(err) { console.log(err.name); }); // always check for errors at the end.
+
+  </script>
+</head>
+<body>
+<form id="form1" runat="server">
+  <div>
+    <video id="video" width="640" height="480" autoplay></video>
+    <button id="snap">Snap Photo</button>
+    <canvas id="canvas" width="640" height="480"></canvas>
+  </div>
+</form>
+</body>
+</html>
