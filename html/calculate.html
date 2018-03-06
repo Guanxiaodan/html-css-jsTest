@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>JS实现一个加减乘除</title>
+</head>
+<body>
+<h3>加减乘除法</h3>
+<input placeholder="第一个数字" id="num1" type="text"/>
+<select name="fuhao" id="fuhao">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+<input placeholder="第二个数字" id="num2" type="text"/>
+<button onclick="yunsuan()">运算</button>
+<input placeholder="得出结果" id="num3" type="text"/>
+
+<script>
+  function yunsuan(){
+    //点击事件运行后，获取相关的所有元素id
+    var num1 = document.getElementById("num1");
+    var num2 = document.getElementById("num2");
+    var num3 = document.getElementById("num3");
+    var fuhao = document.getElementById("fuhao");
+    // 下面这个是正则表达式，下面这个意思则是，只能输入数字，字数必须有一个及以上
+    var zhengze = /^[0-9]{1,}$/;
+    //这里面则是用判断，使用正则的格式，来判断 num1 和num2格式是否正确
+    if(!zhengze.test(num1.value)){
+      //老师判断力用了一个 !(叹号)，意思是取相反，它本身成立则会变成不成立
+      alert('只能输入整数,数字哟');
+      //判断如果不成立，弹出提示并让代码停止运行，就不往下面走了
+      return false;
+    }else if(!zhengze.test(num2.value)){
+      //else if意思是 否则如果，是在if下面使用的一个判断语句
+      alert('只能输入整数,数字哟');
+      return false;
+    }
+    //先用判断，判断它的运算符号
+    //value 是获取它的文本框里的值 select是下拉列表，也可以当做是文本框哦
+    if(fuhao.value == '+'){
+      //一个等号是赋值，两个等号才是平常我们作比较说的“等于”
+      //在JS里，+号不是两个数字相加，而是‘拼接’，将两个数字或者字符串拼接在一起
+      //这里我们做数字运算，就要用到parseInt方法，就它转化成数字才能相加得出结果
+      num3.value = parseInt(num1.value)+parseInt(num2.value);
+    }else if(fuhao.value == '-'){
+      num3.value = parseInt(num1.value)-parseInt(num2.value);
+    }else if(fuhao.value == '*'){
+      num3.value = parseInt(num1.value)*parseInt(num2.value);
+    }else if(fuhao.value == '/'){
+      num3.value = parseInt(num1.value)/parseInt(num2.value);
+    }
+  }
+  </script>
+
+  </body>
+  </html>

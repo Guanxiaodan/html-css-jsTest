@@ -25,6 +25,7 @@
   #### 自己比较喜欢的input框 ---- [input1.html](./css/input1.html)
   #### slider ---- [slider.html](./css/slider.html)
   #### toggle ---- [toggle.html](./css/toggle.html)
+  #### 传统水平垂直居中 ---- [居中.html](./css/居中.html)
  
  ## JavaScript
   #### this指向问题 ---- [this指向问题.js](./js/this指向问题.js)
