@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>slider222</title>
+  <style>
+
+    .range-slider {
+      width: 100%;
+      margin: 60px 0 0 0%;
+    }
+
+    .range-slider__range {
+      -webkit-appearance: none;
+      width: calc(100% - (73px));
+      height: 10px;
+      border-radius: 5px;
+      background: #d7dcdf;
+      outline: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .range-slider__range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #2c3e50;
+      cursor: pointer;
+      -webkit-transition: background 0.15s ease-in-out;
+      transition: background 0.15s ease-in-out;
+    }
+
+    .range-slider__range::-webkit-slider-thumb:hover {
+      background: #1abc9c;
+    }
+
+    .range-slider__range:active::-webkit-slider-thumb {
+      background: #1abc9c;
+    }
+
+
+    .range-slider__value {
+      display: inline-block;
+      position: relative;
+      width: 60px;
+      color: #fff;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 3px;
+      background: #2c3e50;
+      padding: 5px 10px;
+      margin-left: 8px;
+      margin-top: 10px;
+    }
+
+    .range-slider__value:after {
+      position: absolute;
+      top: 8px;
+      left: -7px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-right: 7px solid #2c3e50;
+      border-bottom: 7px solid transparent;
+      content: "";
+    }
+
+
+  </style>
+</head>
+<body>
+<div class="range-slider">
+  <input class="range-slider__range" type="range" value="30" min="0" max="100">
+  <span class="range-slider__value">0</span>
+</div>
+
+
+<script>
+  var rangeSlider = function () {
+    var range = document.querySelector('.range-slider__range');
+    var value = document.querySelector('.range-slider__value');
+
+    var getValue = range.getAttribute('value');
+    value.innerText = getValue;
+
+    range.addEventListener('input', function () {
+      value.innerText = this.value;
+    });
+  };
+
+  rangeSlider();
+</script>
+
+
+</body>
+</html>

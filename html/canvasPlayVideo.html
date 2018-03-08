@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>canvasPlayVideo</title>
+</head>
+<body>
+  <div>
+    <video  controls autoplay id="video1" style="width: 270px;height: 135px;" src="http://27.36.116.139:9004/asset/151148810286708590230/151148810286708590230.preview.mp4"></video>
+    <canvas id="myCanvas" width="270" height="135" style="border:1px solid deeppink"></canvas>
+  </div>
+  <script>
+    var v = document.getElementById('video1')
+    var c = document.getElementById('myCanvas')
+    ctx = c.getContext('2d')
+    v.addEventListener('play', () => {
+      var i = window.setInterval(function () {
+        ctx.drawImage(v, 0, 0, 270, 135)
+      }, 20)
+    }, false)
+    v.addEventListener('pause', function () {
+      window.clearInterval(i)
+    }, false)
+    v.addEventListener('ended', function () {
+      clearInterval(i)
+    }, false)
+  </script>
+</body>
+</html>

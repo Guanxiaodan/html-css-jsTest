@@ -32,7 +32,7 @@
 }
 
 /*主轴方向顶边分配*/
-.between {
+.m-between {
     justify-content: space-between;
 }
 
