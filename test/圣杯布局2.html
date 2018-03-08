@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>margin</title>
+  <style>
+    .father {
+      overflow: hidden;
+    }
+    .son1 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid pink;
+      float: left;
+    }
+    .son2 {
+      height: 100px;
+      border: 2px solid blue;
+      margin: 0 100px 0 100px;
+    }
+    .son3 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <div class="father">
+    <div class="son1"></div>
+    <div class="son3"></div>
+    <div class="son2"></div>
+  </div>
+</div>
+
+</body>
+</html>
