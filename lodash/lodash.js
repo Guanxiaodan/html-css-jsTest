@@ -7269,11 +7269,13 @@
      * // => 2
      */
     function findIndex(array, predicate, fromIndex) {
+      console.log('fromIndex什么玩意', fromIndex);
       var length = array == null ? 0 : array.length;
       if (!length) {
         return -1;
       }
       var index = fromIndex == null ? 0 : toInteger(fromIndex);
+      console.log('索引', index);
       if (index < 0) {
         index = nativeMax(length + index, 0);
       }
