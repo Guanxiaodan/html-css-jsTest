@@ -7067,10 +7067,11 @@
      * // => [1, 2, 3]
      */
     function drop(array, n, guard) {
-      var length = array == null ? 0 : array.length;
-      if (!length) {
+      var length = array == null ? 0 : array.length; // 获取到array的长度，如果array没有被传入，则length为0
+      if (!length) { // 如果length为0，则返回空数组。 ------!0===true------
         return [];
       }
+      console.log('这是个啥', toInteger(n)) //
       n = (guard || n === undefined) ? 1 : toInteger(n);
       return baseSlice(array, n < 0 ? 0 : n, length);
     }

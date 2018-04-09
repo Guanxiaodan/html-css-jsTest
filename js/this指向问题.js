@@ -5,21 +5,21 @@
 var name = 'window';
 
 var person1 = {
-    name: 'person1',
-    show1: function () {
-        console.log(this.name)
-    },
-    show2: () => console.log(this.name),
-    show3: function () {
-        return function () {
-            console.log(this.name)
-        }
-    },
-    show4: function () {
-        return () => console.log(this.name)
+  name:'person1',
+  show1:function () {
+    console.log(this.name)
+  },
+  show2:() => console.log(this.name),
+  show3:function () {
+    return function () {
+      console.log(this.name)
     }
+  },
+  show4:function () {
+    return () => console.log(this.name)
+  }
 };
-var person2 = { name: 'person2' };
+var person2 = {name:'person2'};
 
 person1.show1(); // person1 ====== person1
 person1.show1.call(person2); // person2 ======= person2
@@ -35,23 +35,22 @@ person1.show4()(); // window ======= person1
 person1.show4().call(person2); // person2 ======= person1
 person1.show4.call(person2)(); // window ======= person2
 
-
 console.log('================================================================================================');
 
 function Person (name) {
-    this.name = name;
-    this.show1 = function () {
-        console.log(this.name)
-    };
-    this.show2 = () => console.log(this.name);
-    this.show3 = function () {
-        return function () {
-            console.log(this.name)
-        }
-    };
-    this.show4 = function () {
-        return () => console.log(this.name)
+  this.name = name;
+  this.show1 = function () {
+    console.log(this.name)
+  };
+  this.show2 = () => console.log(this.name)
+  this.show3 = function () {
+    return function () {
+      console.log(this.name)
     }
+  };
+  this.show4 = function () {
+    return () => console.log(this.name)
+  }
 }
 
 var personA = new Person('personA');

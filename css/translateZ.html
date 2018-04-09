@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>trans</title>
+</head>
+<body>
+<style>
+  .father{
+    width: 200px; height: 200px;
+    border: 1px solid #000;
+    margin: 100px auto;
+    perspective: 800px;
+  }
+  .son{
+    width: 100%; height: 100%;
+    background: lime;
+    transition: all 3s;
+    transform: translateZ(-200px);
+  }
+  .son:hover{
+    transform: translateZ(200px);
+  }
+</style>
+<div class="father">
+  <div class="son">鼠标移到这里</div>
+</div>
+</body>
+</html>

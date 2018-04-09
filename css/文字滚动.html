@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <style>
+
+        .rw-words-1 span{
+            position: absolute;
+            opacity: 0;
+            overflow: hidden;
+            color: #6b969d;
+            animation: rotateWord 3s linear infinite 0s;
+        }
+        @keyframes rotateWord {
+            0% { opacity: 0; }
+            15% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+            30% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+            70% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+            85% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+            100% { opacity: 0; }
+        }
+
+    </style>
+</head>
+<body>
+<div class=" rw-words-1">
+    <span id="name">王熙凤</span>
+</div>
+<script>
+    var nameList = ['贾宝玉', '林黛玉', '王熙凤'];
+    var i = 0;
+    setInterval(function () {
+        document.getElementById('name').innerText = nameList[i];
+        i++;
+        if (i === nameList.length){
+            i=0;
+        }
+    },3000)
+</script>
+</body>
+</html>
