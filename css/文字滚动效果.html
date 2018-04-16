@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>滚动标题</title>
+
+    <style>
+
+        #master-container {
+            background-color: #f5c59c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vmin;
+        }
+
+        #master {
+            font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            line-height: 1;
+            font-weight: bold;
+            letter-spacing: 0;
+            -webkit-font-smoothing: inherit
+        }
+
+        #master-container-scroller {
+            height: 66px;
+            overflow: hidden;
+            position: relative
+        }
+
+        .master-container-scroller_item {
+            padding-bottom: 6px;
+            animation: scroll 15s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+        }
+
+        @keyframes scroll {
+            0.0% {
+                transform: translateY(0px)
+            }
+            3.7037037037037037% {
+                transform: translateY(0px)
+            }
+            11.11111111111111% {
+                transform: translateY(-66px)
+            }
+            14.814814814814815% {
+                transform: translateY(-66px)
+            }
+            22.22222222222222% {
+                transform: translateY(-132px)
+            }
+            25.925925925925927% {
+                transform: translateY(-132px)
+            }
+            33.333333333333336% {
+                transform: translateY(-198px)
+            }
+            37.03703703703704% {
+                transform: translateY(-198px)
+            }
+            44.44444444444444% {
+                transform: translateY(-264px)
+            }
+            48.148148148148145% {
+                transform: translateY(-264px)
+            }
+            55.55555555555556% {
+                transform: translateY(-330px)
+            }
+            59.25925925925926% {
+                transform: translateY(-330px)
+            }
+            66.66666666666667% {
+                transform: translateY(-396px)
+            }
+            70.37037037037037% {
+                transform: translateY(-396px)
+            }
+            77.77777777777777% {
+                transform: translateY(-462px)
+            }
+            81.48148148148148% {
+                transform: translateY(-462px)
+            }
+            88.88888888888889% {
+                transform: translateY(-528px)
+            }
+            92.5925925925926% {
+                transform: translateY(-528px)
+            }
+            100.0% {
+                transform: translateY(-594px)
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id='master-container'>
+        <h1 id='master'>
+            <div id='master-container-scroller'>
+                <div class='master-container-scroller_item'>
+                    <div>Friend</div>
+                </div>
+                <div class='master-container-scroller_item'>
+                    <div>Enemy</div>
+                </div>
+                <div class='master-container-scroller_item'>
+                    <div>Frenemy</div>
+                </div>
+                <div class='master-container-scroller_item'>
+                    <div>Mom</div>
+                </div>
+                <div class='master-container-scroller_item'>
+                    <div>Dad</div>
+                </div>
+                <div class='master-container-scroller_item'>
+                    <div>Brother</div>
+                </div>
+                <div class='master-container-scroller_item'>
+                    <div>Sister</div>
+                </div>
+                <div class='master-container-scroller_item'>
+                    <div>Son</div>
+                </div>
+                <div class='master-container-scroller_item'>
+                    <div>Daughter</div>
+                </div>
+                <div class='master-container-scroller_item'>
+                    <div>Friend</div>
+                </div>
+            </div>
+        </h1>
+</div>
+
+</body>
+</html>
