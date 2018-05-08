@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>offsetWidth</title>
+    <style>
+        body,html {
+            margin: 0;
+            padding: 0;
+        }
+        .father {
+            margin: 30px;
+            border: 30px solid #4cbcfd;
+            padding: 30px;
+            background: #2b88fb;
+        }
+        .son {
+            margin: 40px;
+            border: 40px solid #f2984a;
+            padding: 40px;
+            background: #ff642e;
+            width: 100px;
+            height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+<script>
+    const box = document.getElementsByClassName('son')[0];
+    const offsetWidth = box.offsetWidth;
+    console.log('offsetWidth:', offsetWidth);
+</script>
+</body>
+</html>
