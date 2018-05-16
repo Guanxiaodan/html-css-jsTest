@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>横向无限滚动</title>
+  <style>
+    .box {
+      display: inline-block;
+      margin: 20px auto;
+      border: 1px solid #dcdcdc;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .text {
+      position: relative;
+      animation: marquee linear 4s infinite;
+    }
+    @keyframes marquee {
+      0% {
+        left: 0;
+      }
+      49.99999999% {
+        left: -100%;
+      }
+      50% {
+        left: 100.5%;
+      }
+      100% {
+        left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<span class="box">
+    <span class="text">ttteexttextt</span>
+  </span>
+</body>
+</html>
