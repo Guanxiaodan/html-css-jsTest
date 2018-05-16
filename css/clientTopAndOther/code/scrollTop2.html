@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scrollTop</title>
+    <style>
+        body,html {
+            margin: 0;
+            padding: 0;
+        }
+        .father {
+            margin: 30px;
+            border: 30px solid #4cbcfd;
+            padding: 30px;
+            background: #2b88fb;
+        }
+        .son {
+            margin: 40px;
+            border: 40px solid #f2984a;
+            padding: 40px;
+            background: #ff642e;
+            width: 100px;
+            height: 10000px;
+        }
+    </style>
+</head>
+<body onscroll="myFunction()">
+<div class="father">
+    <div class="son"></div>
+</div>
+<script>
+
+    var scrollTop;
+    const myFunction = function() {
+        scrollTop =  document.documentElement.scrollTop
+        console.log('scrollTop:', scrollTop);
+    }
+</script>
+</body>
+</html>
