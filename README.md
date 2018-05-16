@@ -36,6 +36,7 @@
  ## JavaScript
   #### [this指向问题](./js/this指向问题.js)
   #### [定时器问题](./js/setInterval.html)
+  #### [获取文件或所在文件夹的绝对路径](./js/dirname.js)
 
 
  ## 意想不到的CSS
