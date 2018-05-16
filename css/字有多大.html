@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>color</title>
+    <title>字有多大？</title>
     <style>
         .box2 {
             background: yellowgreen;
@@ -12,6 +12,7 @@
             padding: 50px;
             color: blue;
             background: pink;
+            font-size: 5rem;
         }
 
         .box1 {
@@ -20,12 +21,13 @@
         }
 
         #box1 {
-            color: red !important;
+            font-size: 1rem !important;
         }
 
     </style>
 </head>
 <body>
+<!--你以为是权重问题，不不不，其实是自己设置了，找自己的，自己没设置，才找祖先元素的-->
 <div class="box1" id="box1">
     <div class="box2">
         <span class="box3">我的家</span>
