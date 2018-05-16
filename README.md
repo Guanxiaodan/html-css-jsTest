@@ -13,7 +13,7 @@
  ##  CSS
   #### [常用的公共样式(flex布局版)](./css/common.css)
   #### [各种颜色渐变效果](css/渐变效果)
-  #### [font相关](./css/font) ---> [font.md](./css/font/font.md)
+  #### [font相关](./css/font)
   #### [将图片裁成相框](./css/相框.html)
   #### [内容凹陷效果](./css/边框凹陷.html)
   #### [各种input框特效](./css/input.html)
