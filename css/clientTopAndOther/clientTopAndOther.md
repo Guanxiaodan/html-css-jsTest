@@ -3,10 +3,10 @@
 
 ## 1.scrollWidth
 ### scrollWidth = 可横向滚动内容的长度 + padding
-#### [内容横向滚动](/code/scrollWidth2.html)
-![scrollWidth内容横向滚动](/img/scrollWidth.png)
-#### [内容纵向滚动](/code/scrollWidth.html)
-![scrollWidth内容纵向滚动](/img/scrollWidth2.png)
+#### [内容横向滚动](./code/scrollWidth2.html)
+![scrollWidth内容横向滚动](./img/scrollWidth.png)
+#### [内容纵向滚动](./code/scrollWidth.html)
+![scrollWidth内容纵向滚动](./img/scrollWidth2.png)
 
 
 
