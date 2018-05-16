@@ -1,12 +1,10 @@
 # html-css-jsTest
 
 ## HTML
- #### [img标签样式研究](./html/img.html)
- #### [table模板](./html/table.html)
- #### [table简易模板](./html/tableSmall.html)
- #### [video标签](./html/video.html)
- #### [newImage.最简单的图片上传（无后台](./html/newImage.html)
- #### [星星](./html/star.html)
+ #### [table系列](html/table系列)
+ #### [video系列](html/video系列)
+ #### [最简单的图片上传(无后台)](./html/newImage.html)
+ #### [星星评分](./html/star.html)
  #### [随机迷宫](./html/maze.html)
  #### [百度地图](./html/baiduMap.html)
  
