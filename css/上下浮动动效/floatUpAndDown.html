@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>边框凹陷</title>
+  <style>
+
+body {
+  background:#2c3e50;
+}
+
+.boo {
+  margin:0 auto;
+  width:400px;
+  height:400px;
+  background:#E5E5E5;
+  border-radius:50%;
+  border:5px solid #2c3e50;
+}
+
+.float {
+  -webkit-animation-name: Floating;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floating{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+  </style>
+</head>
+<body>
+    <div class="boo float">
+
+    </div>
+</body>
+</html>

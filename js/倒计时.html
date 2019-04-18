@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>倒计时</title>
+</head>
+<body>
+<div>
+    <span id="hour">00</span>
+    <span>:</span>
+    <span id="min">00</span>
+    <span>:</span>
+    <span id="sec">00</span>
+    <div style="width: 100px;height: 100px;background: yellow" id="cli"></div>
+</div>
+<script>
+    var time = 3700
+    var timer;
+    var hourDom = document.getElementById('hour')
+    var minDom = document.getElementById('min')
+    var secDom = document.getElementById('sec')
+    var cli = document.getElementById('cli')
+    function countDown (time) {
+        time = parseInt(time)
+        var sec = 0,
+            min = 0,
+            hour = 0;
+        hour = Math.floor(time/3600);
+        min = Math.floor(time/60) - hour*60;
+        sec = time%60;
+        hourDom.innerHTML = hour;
+        minDom.innerHTML = min;
+        secDom.innerHTML = sec;
+        timer = setInterval(function () {
+            console.log(timer)
+            time = parseInt(time)
+            if(time > 0) {
+                time--;
+                hour = Math.floor(time/3600);
+                min = Math.floor(time/60) - hour*60;
+                sec = time%60;
+
+                secDom.innerHTML = sec;
+                if(sec == 59) {
+                    minDom.innerHTML = min;
+                }
+                if(min == 59){
+                    hourDom.innerHTML = hour;
+                }
+
+            } else {
+               clearInterval(timer)
+            }
+        },1000)
+    }
+
+    countDown(time);
+    cli.addEventListener('click',function () {
+        clearInterval(1)
+    })
+</script>
+</body>
+
+</html>
