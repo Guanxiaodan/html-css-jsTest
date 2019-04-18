@@ -1,6 +1,6 @@
 let wai = {
     sayhello:function(){
-        console.log(`外面的module`)
+        console.log(`main对应的module`)
     }
 }
 

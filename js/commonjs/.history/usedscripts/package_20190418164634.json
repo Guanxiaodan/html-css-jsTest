@@ -1,0 +1,13 @@
+{
+    "name": "usedscriptsgggg",
+    "version": "1.0.0",
+    "description": "小程序通用方案开发模板",
+    "scripts": {},
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/hichaozjp/uto-miniapp-project.git"
+    },
+    "author": "zjp",
+    "license": "ISC",
+    "dependencies": {}
+    }

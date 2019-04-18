@@ -1,6 +1,6 @@
-let wai = {
+let utils = {
     sayhello:function(){
-        console.log(`外面的module`)
+        console.log(`你好我的猫`)
     }
 }
 
@@ -10,7 +10,7 @@ let wai = {
 //     }
 // }
 
-module.exports = wai 
+module.exports = utils 
 
 
 
