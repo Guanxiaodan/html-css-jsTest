@@ -563,7 +563,7 @@
       var extension = path.extname(filename) || '.js'; // 后缀名
       if (!Module._extensions[extension]) extension = '.js'; // 如果没有后缀名，则默认给个.js后缀名
       Module._extensions[extension](this, filename);
-      this.loaded = true;
+      this.loaded = true; // 加载完毕，给loaded赋值为true
     
       if (ESMLoader) {
         const url = getURLFromFilePath(filename);
